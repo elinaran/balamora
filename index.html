@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BALAMORA — Proofreading, Editing, Translation</title>
+  <meta name="description" content="Precision language services for legal, policy, and academic work. Proofreading, substantive editing, and LV/EN/RU translation." />
+  <link rel="icon" href="assets/balamora-logo.png" />
+
+  <style>
+    /* ===== BALAMORA minimal CSS (edit your colors here) ===== */
+    :root{
+      --ink:#0B0B0F;          /* deep ink (headings) */
+      --graphite:#2A2A33;     /* text / borders */
+      --paper:#FFFFFF;        /* background */
+      --soft:#F6F6F8;         /* sections */
+      --accent:#0A66C2;       /* CTA/link (LinkedIn blue for now) */
+      --gold:#BDA887;         /* warm accent (optional) */
+      --radius:16px;
+      --shadow:0 6px 20px rgba(0,0,0,.06);
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--paper);color:#111;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+    img{max-width:100%;display:block}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    .header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #eee}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .brand{display:flex;gap:12px;align-items:center;color:inherit;text-decoration:none}
+    .brand img{height:40px;width:40px;object-fit:contain;border-radius:10px}
+    .brand .t{line-height:1}
+    .brand .t b{letter-spacing:.02em}
+    .brand .t span{display:block;font-size:12px;color:#667085;margin-top:2px}
+    .links{display:none;gap:22px;font-size:14px}
+    .cta{display:none;padding:10px 16px;border-radius:12px;background:var(--accent);color:#fff;font-weight:600;box-shadow:var(--shadow)}
+    .section{padding:64px 0}
+    .eyebrow{display:inline-block;font-size:12px;color:#667085;border:1px solid #e6e6e6;padding:6px 10px;border-radius:999px;background:#fff}
+    h1{font-size:36px;line-height:1.15;margin:14px 0;color:var(--ink)}
+    h2{font-size:28px;margin:0 0 18px;color:var(--ink)}
+    p{color:#3f3f46;line-height:1.65}
+    .grid{display:grid;gap:16px}
+    .three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .four{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:600}
+    .btn.primary{background:var(--accent);color:#fff}
+    .btn.ghost{border:1px solid #e5e7eb;color:#111;background:#fff}
+    .muted{color:#6b7280;font-size:12px}
+    .soft{background:var(--soft);border-top:1px solid #eee;border-bottom:1px solid #eee}
+    .step{height:32px;width:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;font-weight:700}
+
+    .footer{border-top:1px solid #eee;padding:24px 0;color:#6b7280;font-size:14px}
+    .row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+
+    /* responsive */
+    @media (min-width: 900px){
+      .links{display:flex}
+      .cta{display:inline-block}
+      .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="#home">
+        <img src="assets/balamora-logo.png" alt="BALAMORA logo">
+        <div class="t">
+          <b>BALAMORA</b>
+          <span>Proofreading • Editing • Translation</span>
+        </div>
+      </a>
+      <nav class="links">
+        <a href="#services">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta" href="#contact">Get a quote</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="section">
+    <div class="wrap hero">
+      <div>
+        <span class="eyebrow">Proofreading • Editing • Translation</span>
+        <h1>Precision language for legal, policy, and academic work.</h1>
+        <p>
+          BALAMORA helps teams and individuals turn drafts into publication-ready documents —
+          with meticulous proofreading, substantive editing, and efficient tri-lingual translation (LV/EN/RU).
+        </p>
+        <div class="row" style="margin-top:18px">
+          <a class="btn primary" href="#contact">Request a proposal</a>
+          <a class="btn ghost" href="#samples">See samples</a>
+        </div>
+        <p class="muted" style="margin-top:10px">
+          Fast turnaround • Confidential • Style-guide compliant (APA/OSCOLA/Chicago)
+        </p>
+      </div>
+      <div>
+        <div class="card" style="text-align:center">
+          <img src="assets/balamora-logo.png" alt="BALAMORA mark" style="height:140px;width:auto;margin:0 auto 10px">
+          <p style="font-style:italic;color:#6b7280">“Vārdi, kas strādā jūsu labā.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <div class="soft">
+    <div class="wrap row" style="justify-content:center; padding:10px 0; font-size:13px; color:#6b7280;">
+      <span>Trusted by researchers, NGOs, & public sector teams</span> •
+      <span>Confidentiality agreements available</span> •
+      <span>Native-level LV / EN / RU</span>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="wrap">
+      <span class="eyebrow">What we do</span>
+      <h2>Services</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>Proofreading</h3>
+          <p>Final pass for typos, grammar, punctuation, numbers, tables, and references.</p>
+          <ul>
+            <li>Grammar & punctuation</li>
+            <li>Consistency & style</li>
+            <li>Final publication check</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Substantive Editing</h3>
+          <p>Structure, clarity, tone, and argument flow. We reshape text while preserving voice.</p>
+          <ul>
+            <li>Clarity & coherence</li>
+            <li>Headings & flow</li>
+            <li>Executive-ready drafts</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Translation (LV / EN / RU)</h3>
+          <p>Accurate, context-aware translations for legal, policy, and academic texts.</p>
+          <ul>
+            <li>Terminology research</li>
+            <li>Parallel-text delivery</li>
+            <li>Back-translation on request</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section id="industries" class="section" style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow">Where we add the most value</span>
+      <h2>Industries</h2>
+      <div class="grid four">
+        <div class="card" style="text-align:center">Law & Policy</div>
+        <div class="card" style="text-align:center">Human Rights / NGOs</div>
+        <div class="card" style="text-align:center">Academia & Research</div>
+        <div class="card" style="text-align:center">EU / Public Sector</div>
+        <div class="card" style="text-align:center">Corporate / ESG</div>
+        <div class="card" style="text-align:center">Tech / Product Docs</div>
+        <div class="card" style="text-align:center">Grant Proposals</div>
+        <div class="card" style="text-align:center">Web & Marketing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="section soft">
+    <div class="wrap">
+      <span class="eyebrow">How it works</span>
+      <h2>Process</h2>
+      <div class="grid four">
+        <div class="card">
+          <div class="step">1</div>
+          <h3>Brief</h3>
+          <p>Share your draft, target audience, style guide, and deadline.</p>
+        </div>
+        <div class="card">
+          <div class="step">2</div>
+          <h3>Quote</h3>
+          <p>We confirm scope, price, and turnaround. NDA available on request.</p>
+        </div>
+        <div class="card">
+          <div class="step">3</div>
+          <h3>Edit</h3>
+          <p>Tracked changes + comments. We keep your voice — just sharper.</p>
+        </div>
+        <div class="card">
+          <div class="step">4</div>
+          <h3>Deliver</h3>
+          <p>Clean + marked-up files, reference checks, and a style consistency sheet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section">
+    <div class="wrap">
+      <span class="eyebrow">Transparent & flexible</span>
+      <h2>Pricing</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>Proofreading</h3>
+          <p>Final quality pass for publication.</p>
+          <p><strong>€0.02–0.03/word</strong></p>
+          <ul>
+            <li>Typos & grammar</li>
+            <li>Style & consistency</li>
+            <li>Reference scan</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Substantive Editing</h3>
+          <p>Structure, clarity, and argument strength.</p>
+          <p><strong>€0.04–0.08/word</strong></p>
+          <ul>
+            <li>Structure & flow</li>
+            <li>Plain-language rewrites</li>
+            <li>Commented rationale</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Translation</h3>
+          <p>LV ⇄ EN ⇄ RU (specialized).</p>
+          <p><strong>from €0.06/word</strong></p>
+          <ul>
+            <li>Terminology research</li>
+            <li>Two-pass QA</li>
+            <li>Optional back-translation</li>
+          </ul>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:8px">* Expedited delivery available. Per-hour arrangements possible for complex projects.</p>
+    </div>
+  </section>
+
+  <!-- Samples (placeholder) -->
+  <section id="samples" class="section soft">
+    <div class="wrap">
+      <span class="eyebrow">Before & after</span>
+      <h2>Samples</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Legal memo excerpt</h3>
+          <div class="grid two" style="gap:12px">
+            <div>
+              <p class="muted">Before</p>
+              <div class="card" style="background:#fafafa">Lorem ipsum dolor sit amet… (placeholder)</div>
+            </div>
+            <div>
+              <p class="muted">After</p>
+              <div class="card" style="background:#fafafa">Clear, direct, and audience-appropriate language. (placeholder)</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Grant proposal abstract</h3>
+          <div class="grid two" style="gap:12px">
+            <div>
+              <p class="muted">Before</p>
+              <div class="card" style="background:#fafafa">Lorem ipsum dolor sit amet… (placeholder)</div>
+            </div>
+            <div>
+              <p class="muted">After</p>
+              <div class="card" style="background:#fafafa">Sharper, persuasive wording with logical flow. (placeholder)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <span class="eyebrow">Who we are</span>
+      <h2>About</h2>
+      <div class="grid two">
+        <div class="card">
+          <p>
+            BALAMORA is led by a legally trained editor with experience across EU-level research,
+            human rights documentation, and academic publishing. We combine speed with scholarly rigor,
+            ensuring every document is reader-centred, compliant with the relevant style guide,
+            and easy to act on.
+          </p>
+          <ul>
+            <li>Advanced knowledge of APA, OSCOLA, Chicago, MLA</li>
+            <li>Tri-lingual LV / EN / RU</li>
+            <li>NDAs & data-processing agreements available</li>
+            <li>Experience with EU, CoE, and national frameworks</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Quick facts</h3>
+          <ul>
+            <li>Turnaround: 24–72h (typical)</li>
+            <li>Time-zone: EET/EEST (Riga)</li>
+            <li>Tools: Track Changes, Google Docs Suggesting, Overleaf</li>
+            <li>Invoicing: EU e-invoice / company / freelance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section soft">
+    <div class="wrap">
+      <span class="eyebrow">Start your project</span>
+      <h2>Contact</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:hello@balamora.com"><strong>hello@balamora.com</strong></a> (replace with your real address)</p>
+          <h3 style="margin-top:14px">Languages</h3>
+          <p>Latviešu • English • Русский</p>
+          <h3 style="margin-top:14px">Social</h3>
+          <p><a href="https://www.linkedin.com/company/balamora/" target="_blank" rel="noreferrer">LinkedIn</a></p>
+        </div>
+        <div class="card">
+          <h3>Request a quote</h3>
+          <p>Send us your document, audience, deadline, and any style guide (APA/OSCOLA/Chicago/MLA).</p>
+          <a class="btn primary" href="mailto:hello@balamora.com?subject=Quote%20request%20—%20BALAMORA&body=Document%20type:%0AAudience:%0ADeadline:%0AStyle%20guide:%0ALanguage(s):%0ANotes:">Email us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap row" style="justify-content:space-between">
+      <div>© <span id="year"></span> BALAMORA. All rights reserved.</div>
+      <div class="row">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
