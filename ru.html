@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BALAMORA — Корректура, редактирование, перевод</title>
+  <meta name="description" content="Точная работа с языком для юридических, политических и академических текстов. Корректура, содержательное редактирование и перевод LV/EN/RU." />
+  <link rel="icon" href="assets/balamora-logo.png" />
+  <link rel="alternate" hreflang="en" href="./index.html">
+  <link rel="alternate" hreflang="lv" href="./lv.html">
+  <link rel="alternate" hreflang="ru" href="./ru.html">
+  <style>
+    :root{ --ink:#0B0B0F; --graphite:#2A2A33; --paper:#FFFFFF; --soft:#F6F6F8;
+      --accent:#0A66C2; --gold:#BDA887; --radius:16px; --shadow:0 6px 20px rgba(0,0,0,.06); --max:1120px; }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--paper);color:#111;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+    img{max-width:100%;display:block}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    .header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #eee}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .brand{display:flex;gap:12px;align-items:center;color:inherit;text-decoration:none}
+    .brand img{height:40px;width:40px;object-fit:contain;border-radius:10px}
+    .brand .t{line-height:1} .brand .t b{letter-spacing:.02em} .brand .t span{display:block;font-size:12px;color:#667085;margin-top:2px}
+    .links{display:none;gap:22px;font-size:14px}
+    .section{padding:64px 0}
+    .eyebrow{display:inline-block;font-size:12px;color:#667085;border:1px solid #e6e6e6;padding:6px 10px;border-radius:999px;background:#fff}
+    h1{font-size:36px;line-height:1.15;margin:14px 0;color:var(--ink)} h2{font-size:28px;margin:0 0 18px;color:var(--ink)} p{color:#3f3f46;line-height:1.65}
+    .grid{display:grid;gap:16px} .three{grid-template-columns:repeat(3,minmax(0,1fr))} .four{grid-template-columns:repeat(4,minmax(0,1fr))} .two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:600}
+    .btn.primary{background:var(--accent);color:#fff}
+    .btn.ghost{border:1px solid #e5e7eb;color:#111;background:#fff}
+    .muted{color:#6b7280;font-size:12px}
+    .soft{background:var(--soft);border-top:1px solid #eee;border-bottom:1px solid #eee}
+    .step{height:32px;width:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;font-weight:700}
+    .footer{border-top:1px solid #eee;padding:24px 0;color:#6b7280;font-size:14px}
+    .row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+
+    .lang{display:flex;gap:10px;align-items:center}
+    .lang a{font-weight:600;color:#0A66C2}
+    .lang .current{color:#111;cursor:default;text-decoration:none}
+    .lang .sep{color:#c7cad1}
+
+    @media (min-width: 900px){
+      .links{display:flex}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="#home">
+        <img src="assets/balamora-logo.png" alt="Логотип BALAMORA">
+        <div class="t"><b>BALAMORA</b><span>Корректура • Редактирование • Перевод</span></div>
+      </a>
+
+      <nav class="links">
+        <a href="#services">Услуги</a><a href="#industries">Отрасли</a><a href="#process">Процесс</a><a href="#pricing">Цены</a><a href="#about">О нас</a><a href="#contact">Контакты</a>
+      </nav>
+
+      <div class="lang" aria-label="Переключение языка">
+        <a href="./index.html" hreflang="en">EN</a><span class="sep">/</span>
+        <a href="./lv.html" hreflang="lv">LV</a><span class="sep">/</span>
+        <span class="current" aria-current="page">RU</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="section">
+    <div class="wrap hero">
+      <div>
+        <span class="eyebrow">Корректура • Редактирование • Перевод</span>
+        <h1>Точная работа с текстом для юридической, политической и академической сфер.</h1>
+        <p>BALAMORA помогает командам и авторам превращать черновики в готовые к публикации материалы — благодаря тщательной корректуре, содержательному редактированию и оперативному трёхъязычному переводу (LV/EN/RU).</p>
+        <div class="row" style="margin-top:18px">
+          <a class="btn primary" href="#contact">Запросить предложение</a>
+          <a class="btn ghost" href="#samples">Смотреть примеры</a>
+        </div>
+        <p class="muted" style="margin-top:10px">Быстрые сроки • Конфиденциальность • Соответствие стилям (APA/OSCOLA/Chicago)</p>
+      </div>
+      <div>
+        <div class="card" style="text-align:center">
+          <img src="assets/balamora-logo.png" alt="Знак BALAMORA" style="height:140px;width:auto;margin:0 auto 10px">
+          <p style="font-style:italic;color:#6b7280">«Vārdi, kas strādā jūsu labā.»</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="soft">
+    <div class="wrap row" style="justify-content:center; padding:10px 0; font-size:13px; color:#6b7280;">
+      <span>Нам доверяют исследователи, НПО и госструктуры</span> • <span>Договоры о конфиденциальности — по запросу</span> • <span>Носительский уровень LV / EN / RU</span>
+    </div>
+  </div>
+
+  <section id="services" class="section">
+    <div class="wrap">
+      <span class="eyebrow">Что мы делаем</span>
+      <h2>Услуги</h2>
+      <div class="grid three">
+        <div class="card"><h3>Корректура</h3><p>Финальная вычитка: опечатки, грамматика, пунктуация, числа, таблицы, ссылки.</p><ul><li>Грамматика и пунктуация</li><li>Единый стиль и терминология</li><li>Проверка готовности к публикации</li></ul></div>
+        <div class="card"><h3>Содержательное редактирование</h3><p>Структура, ясность, тон и логика аргументации. Сохраняем голос — делаем его точнее.</p><ul><li>Ясность и связность</li><li>Заголовки и поток</li><li>Черновики для руководителей</li></ul></div>
+        <div class="card"><h3>Перевод (LV / EN / RU)</h3><p>Точный, контекстно-чувствительный перевод юридических, политических и академических текстов.</p><ul><li>Терминологические исследования</li><li>Поставка параллельного текста</li><li>Обратный перевод по запросу</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="industries" class="section" style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow">Где наша ценность максимальна</span>
+      <h2>Отрасли</h2>
+      <div class="grid four">
+        <div class="card" style="text-align:center">Право и политика</div>
+        <div class="card" style="text-align:center">Права человека / НПО</div>
+        <div class="card" style="text-align:center">Академия и исследования</div>
+        <div class="card" style="text-align:center">ЕС / государственный сектор</div>
+        <div class="card" style="text-align:center">Бизнес / ESG</div>
+        <div class="card" style="text-align:center">Технологии / документация</div>
+        <div class="card" style="text-align:center">Грантовые заявки</div>
+        <div class="card" style="text-align:center">Веб и маркетинг</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="section soft">
+    <div class="wrap">
+      <span class="eyebrow">Как это работает</span>
+      <h2>Процесс</h2>
+      <div class="grid four">
+        <div class="card"><div class="step">1</div><h3>Бриф</h3><p>Отправьте черновик, ЦА, стиль и срок.</p></div>
+        <div class="card"><div class="step">2</div><h3>Смета</h3><p>Подтверждаем объём, цену и сроки. NDA — по запросу.</p></div>
+        <div class="card"><div class="step">3</div><h3>Редактирование</h3><p>Отслеживаемые правки и комментарии. Сохраняем ваш голос — делаем яснее.</p></div>
+        <div class="card"><div class="step">4</div><h3>Поставка</h3><p>Чистые и размеченные файлы, проверка ссылок и лист стиля.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <div class="wrap">
+      <span class="eyebrow">Прозрачно и гибко</span>
+      <h2>Цены</h2>
+      <div class="grid three">
+        <div class="card"><h3>Корректура</h3><p>Финальный контроль качества.</p><p><strong>€0.02–0.03/слово</strong></p><ul><li>Опечатки и грамматика</li><li>Стиль и консистентность</li><li>Проверка ссылок</li></ul></div>
+        <div class="card"><h3>Содержательное редактирование</h3><p>Структура, ясность и сила аргумента.</p><p><strong>€0.04–0.08/слово</strong></p><ul><li>Структура и поток</li><li>Ясный язык</li><li>Пояснения в комментариях</li></ul></div>
+        <div class="card"><h3>Перевод</h3><p>LV ⇄ EN ⇄ RU (специализированные тексты).</p><p><strong>от €0.06/слово</strong></p><ul><li>Терминология</li><li>Двухэтапный QA</li><li>Обратный перевод (по запросу)</li></ul></div>
+      </div>
+      <p class="muted" style="margin-top:8px">* Ускоренные сроки — возможно. Для сложных проектов — почасовая ставка.</p>
+    </div>
+  </section>
+
+  <section id="samples" class="section soft">
+    <div class="wrap">
+      <span class="eyebrow">До и после</span>
+      <h2>Примеры</h2>
+      <div class="grid two">
+        <div class="card"><h3>Фрагмент юридической записки</h3><div class="grid two" style="gap:12px"><div><p class="muted">До</p><div class="card" style="background:#fafafa">Lorem ipsum dolor sit amet… (пример)</div></div><div><p class="muted">После</p><div class="card" style="background:#fafafa">Ясный, адресный для аудитории текст. (пример)</div></div></div></div>
+        <div class="card"><h3>Аннотация грантовой заявки</h3><div class="grid two" style="gap:12px"><div><p class="muted">До</p><div class="card" style="background:#fafafa">Lorem ipsum dolor sit amet… (пример)</div></div><div><p class="muted">После</p><div class="card" style="background:#fafafa">Более убедительная аргументация и логичный поток. (пример)</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="wrap">
+      <span class="eyebrow">Кто мы</span>
+      <h2>О нас</h2>
+      <div class="grid two">
+        <div class="card"><p>BALAMORA руководит редактор с юридическим образованием и опытом работы на уровне ЕС, в документации по правам человека и академических публикациях. Мы объединяем скорость и академическую точность, делая каждый документ ориентированным на читателя, соответствующим стилю и удобным в применении.</p><ul><li>APA, OSCOLA, Chicago, MLA</li><li>Латышский / Английский / Русский</li><li>NDA и соглашения об обработке данных</li><li>Практика ЕС, Совета Европы и нац.уровня</li></ul></div>
+        <div class="card"><h3>Кратко</h3><ul><li>Сроки: 24–72 ч (обычно)</li><li>Часовой пояс: EET/EEST (Рига)</li><li>Инструменты: Track Changes, Google Docs, Overleaf</li><li>Счета: EU e-invoice / компания / фриланс</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section soft">
+    <div class="wrap">
+      <span class="eyebrow">Начать проект</span>
+      <h2>Контакты</h2>
+      <div class="grid two">
+        <div class="card"><h3>Эл. почта</h3><p><a href="mailto:hello@balamora.com"><strong>hello@balamora.com</strong></a> (замените на ваш адрес)</p><h3 style="margin-top:14px">Языки</h3><p>Latviešu • English • Русский</p><h3 style="margin-top:14px">Соцсети</h3><p><a href="https://www.linkedin.com/company/balamora/" target="_blank" rel="noreferrer">LinkedIn</a></p></div>
+        <div class="card"><h3>Запросить предложение</h3><p>Укажите тип документа, аудиторию, срок и стиль (APA/OSCOLA/Chicago/MLA).</p><a class="btn primary" href="mailto:hello@balamora.com?subject=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%E2%80%94%20BALAMORA&body=%D0%A2%D0%B8%D0%BF%20%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0:%0A%D0%90%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F:%0A%D0%A1%D1%80%D0%BE%D0%BA:%0A%D0%A1%D1%82%D0%B8%D0%BB%D1%8C:%0A%D0%AF%D0%B7%D1%8B%D0%BA(и):%0A%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%87%D0%B0%D0%BD%D0%B8%D1%8F:">Написать письмо</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap row" style="justify-content:space-between">
+      <div>© <span id="year"></span> BALAMORA. Все права защищены.</div>
+      <div class="row"><a href="#services">Услуги</a><a href="#pricing">Цены</a><a href="#contact">Контакты</a></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
