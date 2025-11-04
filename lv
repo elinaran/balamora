@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BALAMORA — Korektūra, rediģēšana, tulkošana</title>
+  <meta name="description" content="Precīza valoda juridiskam, politikas un akadēmiskam darbam. Korektūra, satura rediģēšana un tulkošana LV/EN/RU." />
+  <link rel="icon" href="assets/balamora-logo.png" />
+  <link rel="alternate" hreflang="en" href="./index.html">
+  <link rel="alternate" hreflang="lv" href="./lv.html">
+  <style>
+    :root{
+      --ink:#0B0B0F; --graphite:#2A2A33; --paper:#FFFFFF; --soft:#F6F6F8;
+      --accent:#0A66C2; --gold:#BDA887; --radius:16px; --shadow:0 6px 20px rgba(0,0,0,.06); --max:1120px;
+    }
+    *{box-sizing:border-box} html,body{margin:0;background:var(--paper);color:#111;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+    img{max-width:100%;display:block} a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    .header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #eee}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .brand{display:flex;gap:12px;align-items:center;color:inherit;text-decoration:none}
+    .brand img{height:40px;width:40px;object-fit:contain;border-radius:10px}
+    .brand .t{line-height:1} .brand .t b{letter-spacing:.02em} .brand .t span{display:block;font-size:12px;color:#667085;margin-top:2px}
+    .links{display:none;gap:22px;font-size:14px}
+    .cta{display:none;padding:10px 16px;border-radius:12px;background:var(--accent);color:#fff;font-weight:600;box-shadow:var(--shadow)}
+    .section{padding:64px 0} .eyebrow{display:inline-block;font-size:12px;color:#667085;border:1px solid #e6e6e6;padding:6px 10px;border-radius:999px;background:#fff}
+    h1{font-size:36px;line-height:1.15;margin:14px 0;color:var(--ink)} h2{font-size:28px;margin:0 0 18px;color:var(--ink)} p{color:#3f3f46;line-height:1.65}
+    .grid{display:grid;gap:16px} .three{grid-template-columns:repeat(3,minmax(0,1fr))} .four{grid-template-columns:repeat(4,minmax(0,1fr))} .two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:600} .btn.primary{background:var(--accent);color:#fff} .btn.ghost{border:1px solid #e5e7eb;color:#111;background:#fff}
+    .muted{color:#6b7280;font-size:12px} .soft{background:var(--soft);border-top:1px solid #eee;border-bottom:1px solid #eee}
+    .step{height:32px;width:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;font-weight:700}
+    .footer{border-top:1px solid #eee;padding:24px 0;color:#6b7280;font-size:14px} .row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    @media (min-width: 900px){ .links{display:flex} .cta{display:inline-block} .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center} }
+  </style>
+</head>
+<body>
+
+  <!-- Galvene -->
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="#home">
+        <img src="assets/balamora-logo.png" alt="BALAMORA logo">
+        <div class="t"><b>BALAMORA</b><span>Korektūra • Rediģēšana • Tulkošana</span></div>
+      </a>
+      <nav class="links">
+        <a href="#services">Pakalpojumi</a><a href="#industries">Nozares</a><a href="#process">Darba gaita</a><a href="#pricing">Cenas</a><a href="#about">Par mums</a><a href="#contact">Kontakti</a>
+      </nav>
+      <!-- valodas pārslēgs -->
+      <div class="cta" style="background:none;box-shadow:none;padding:0">
+        <a href="./index.html" style="font-weight:600;color:#0A66C2">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="section">
+    <div class="wrap hero">
+      <div>
+        <span class="eyebrow">Korektūra • Rediģēšana • Tulkošana</span>
+        <h1>Precīza valoda juridiskam, politikas un akadēmiskam darbam.</h1>
+        <p>
+          BALAMORA palīdz komandām un individuāliem autoriem pārvērst melnrakstus
+          publikācijai gatavos tekstos — ar rūpīgu korektūru, saturisko rediģēšanu
+          un efektīvu trīsvalodu tulkošanu (LV/EN/RU).
+        </p>
+        <div class="row" style="margin-top:18px">
+          <a class="btn primary" href="#contact">Pieprasīt piedāvājumu</a>
+          <a class="btn ghost" href="#samples">Apskatīt paraugus</a>
+        </div>
+        <p class="muted" style="margin-top:10px">
+          Ātrs izpildes laiks • Konfidencialitāte • Atbilstība stila prasībām (APA/OSCOLA/Chicago)
+        </p>
+      </div>
+      <div>
+        <div class="card" style="text-align:center">
+          <img src="assets/balamora-logo.png" alt="BALAMORA zīme" style="height:140px;width:auto;margin:0 auto 10px">
+          <p style="font-style:italic;color:#6b7280">“Vārdi, kas strādā jūsu labā.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Uzticamības josla -->
+  <div class="soft">
+    <div class="wrap row" style="justify-content:center; padding:10px 0; font-size:13px; color:#6b7280;">
+      <span>Uzticas pētnieki, NVO un publiskais sektors</span> •
+      <span>Pieejami konfidencialitātes līgumi</span> •
+      <span>Dzimtās valodas līmenis LV / EN / RU</span>
+    </div>
+  </div>
+
+  <!-- Pakalpojumi -->
+  <section id="services" class="section">
+    <div class="wrap">
+      <span class="eyebrow">Ko darām</span>
+      <h2>Pakalpojumi</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>Korektūra</h3>
+          <p>Noslēdzošā pārbaude — kļūdas, interpunkcija, skaitļi, tabulas, atsauces.</p>
+          <ul>
+            <li>Gramatika un interpunkcija</li>
+            <li>Stila un terminoloģijas konsekvence</li>
+            <li>Publikācijas gatavības pārbaude</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Satura rediģēšana</h3>
+          <p>Struktūra, skaidrība, tonis un argumentācijas plūdums. Saglabājam balsi — padarām asāku.</p>
+          <ul>
+            <li>Skaidrība un loģika</li>
+            <li>Virsraksti un plūdums</li>
+            <li>Vadībai gatavi melnraksti</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tulkošana (LV / EN / RU)</h3>
+          <p>Punktuāla, kontekstam atbilstoša juridisko, politikas un akadēmisko tekstu tulkošana.</p>
+          <ul>
+            <li>Terminoloģijas izpēte</li>
+            <li>Paralēlteksta piegāde</li>
+            <li>Pēc pieprasījuma — atpakaļtulkojums</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nozares -->
+  <section id="industries" class="section" style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow">Kur pievienojam vislielāko vērtību</span>
+      <h2>Nozares</h2>
+      <div class="grid four">
+        <div class="card" style="text-align:center">Tiesības un politika</div>
+        <div class="card" style="text-align:center">Cilvēktiesības / NVO</div>
+        <div class="card" style="text-align:center">Akadēmija un pētniecība</div>
+        <div class="card" style="text-align:center">ES / publiskais sektors</div>
+        <div class="card" style="text-align:center">Uzņēmējdarbība / ESG</div>
+        <div class="card" style="text-align:center">Tehnoloģijas / produktu dokumentācija</div>
+        <div class="card" style="text-align:center">Grantu pieteikumi</div>
+        <div class="card" style="text-align:center">Tīmeklis un mārketings</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Darba gaita -->
+  <section id="process" class="section soft">
+    <div class="wrap">
+      <span class="eyebrow">Kā tas strādā</span>
+      <h2>Darba gaita</h2>
+      <div class="grid four">
+        <div class="card"><div class="step">1</div><h3>Pieteikums</h3><p>Nosūtiet melnrakstu, mērķauditoriju, stila rokasgrāmatu un termiņu.</p></div>
+        <div class="card"><div class="step">2</div><h3>Piedāvājums</h3><p>Apstiprinām apjomu, cenu un izpildes laiku. NDA pēc pieprasījuma.</p></div>
+        <div class="card"><div class="step">3</div><h3>Rediģēšana</h3><p>Izmaiņas ar komentāriem. Saglabājam jūsu balsi — tikai skaidrāk.</p></div>
+        <div class="card"><div class="step">4</div><h3>Piegāde</h3><p>Tīrie un atzīmētie faili, atsauču pārbaude un stila konsekvences lapa.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cenas -->
+  <section id="pricing" class="section">
+    <div class="wrap">
+      <span class="eyebrow">Caurspīdīgi un elastīgi</span>
+      <h2>Cenas</h2>
+      <div class="grid three">
+        <div class="card">
+          <h3>Korektūra</h3>
+          <p>Noslēdzoša kvalitātes pārbaude publicēšanai.</p>
+          <p><strong>€0.02–0.03/vārds</strong></p>
+          <ul><li>Kļūdas un gramatika</li><li>Stils un konsekvence</li><li>Atsauču skenējums</li></ul>
+        </div>
+        <div class="card">
+          <h3>Satura rediģēšana</h3>
+          <p>Struktūra, skaidrība un argumentu stiprums.</p>
+          <p><strong>€0.04–0.08/vārds</strong></p>
+          <ul><li>Struktūra un plūdums</li><li>Vienkāršā valoda</li><li>Komentēts pamatojums</li></ul>
+        </div>
+        <div class="card">
+          <h3>Tulkošana</h3>
+          <p>LV ⇄ EN ⇄ RU (specializēti teksti).</p>
+          <p><strong>no €0.06/vārds</strong></p>
+          <ul><li>Terminoloģijas izpēte</li><li>Divpakāpju kvalitātes kontrole</li><li>Atpakaļtulkojums (pēc piepras.)</li></ul>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:8px">* Ātrie termiņi iespējami. Sarežģītiem projektiem — stundas likme.</p>
+    </div>
+  </section>
+
+  <!-- Paraugi -->
+  <section id="samples" class="section soft">
+    <div class="wrap">
+      <span class="eyebrow">Pirms un pēc</span>
+      <h2>Paraugi</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Juridiska memoranda fragments</h3>
+          <div class="grid two" style="gap:12px">
+            <div><p class="muted">Pirms</p><div class="card" style="background:#fafafa">Lorem ipsum dolor sit amet… (paraugs)</div></div>
+            <div><p class="muted">Pēc</p><div class="card" style="background:#fafafa">Skaidrāka, mērķauditorijai piemērota valoda. (paraugs)</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Granta pieteikuma kopsavilkums</h3>
+          <div class="grid two" style="gap:12px">
+            <div><p class="muted">Pirms</p><div class="card" style="background:#fafafa">Lorem ipsum dolor sit amet… (paraugs)</div></div>
+            <div><p class="muted">Pēc</p><div class="card" style="background:#fafafa">Pārliecinošāka argumentācija un loģisks plūdums. (paraugs)</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Par mums -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <span class="eyebrow">Kas mēs esam</span>
+      <h2>Par mums</h2>
+      <div class="grid two">
+        <div class="card">
+          <p>
+            BALAMORA vada jurista izglītību ieguvis redaktors ar pieredzi ES līmeņa pētījumos,
+            cilvēktiesību dokumentēšanā un akadēmiskajā publicistikā. Apvienojam ātrumu ar akadēmisku rūpību,
+            nodrošinot, ka katrs dokuments ir lasītājam draudzīgs, atbilst stila prasībām un ir viegli izmantojams.
+          </p>
+          <ul>
+            <li>APA, OSCOLA, Chicago, MLA</li>
+            <li>Latviešu / English / Русский</li>
+            <li>NDA un datu apstrādes līgumi</li>
+            <li>ES, Eiropas Padomes un nacionālā prakse</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Fakti īsumā</h3>
+          <ul>
+            <li>Termiņi: 24–72 h (tipiski)</li>
+            <li>Laika zona: EET/EEST (Rīga)</li>
+            <li>Rīki: Track Changes, Google Docs, Overleaf</li>
+            <li>Rēķini: ES e-rēķins / uzņēmums / pašnod.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakti -->
+  <section id="contact" class="section soft">
+    <div class="wrap">
+      <span class="eyebrow">Sākt projektu</span>
+      <h2>Kontakti</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>E-pasts</h3>
+          <p><a href="mailto:hello@balamora.com"><strong>hello@balamora.com</strong></a> (aizstājiet ar savu adresi)</p>
+          <h3 style="margin-top:14px">Valodas</h3><p>Latviešu • English • Русский</p>
+          <h3 style="margin-top:14px">Sociālie tīkli</h3><p><a href="https://www.linkedin.com/company/balamora/" target="_blank" rel="noreferrer">LinkedIn</a></p>
+        </div>
+        <div class="card">
+          <h3>Pieprasīt piedāvājumu</h3>
+          <p>Norādiet dokumenta veidu, mērķauditoriju, termiņu un stila rokasgrāmatu (APA/OSCOLA/Chicago/MLA).</p>
+          <a class="btn primary" href="mailto:hello@balamora.com?subject=Pied%C4%81v%C4%81juma%20piepras%C4%ABjums%20%E2%80%94%20BALAMORA&body=Dokumenta%20tips:%0AM%C4%93r%C4%B7auditorija:%0ATermi%C5%86%C5%A1:%0AStila%20rokasgr%C4%81mata:%0AValoda(s):%0APiez%C4%ABmes:">Rakstīt e-pastu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kājene -->
+  <footer class="footer">
+    <div class="wrap row" style="justify-content:space-between">
+      <div>© <span id="year"></span> BALAMORA. Visas tiesības aizsargātas.</div>
+      <div class="row"><a href="#services">Pakalpojumi</a><a href="#pricing">Cenas</a><a href="#contact">Kontakti</a></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
