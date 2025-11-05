@@ -11,60 +11,120 @@
   <link rel="alternate" hreflang="ru" href="./ru.html">
   
   <style>
-    /* ===== BALAMORA minimal CSS (edit your colors here) ===== */
-    :root{
-      --ink:#0B0B0F;          /* deep ink (headings) */
-      --graphite:#2A2A33;     /* text / borders */
-      --paper:#FFFFFF;        /* background */
-      --soft:#F6F6F8;         /* sections */
-      --accent:#0A66C2;       /* CTA/link (LinkedIn blue for now) */
-      --gold:#BDA887;         /* warm accent (optional) */
-      --radius:16px;
-      --shadow:0 6px 20px rgba(0,0,0,.06);
-      --max:1120px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--paper);color:#111;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
-    img{max-width:100%;display:block}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-    .header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #eee}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-    .brand{display:flex;gap:12px;align-items:center;color:inherit;text-decoration:none}
-    .brand img{height:40px;width:40px;object-fit:contain;border-radius:10px}
-    .brand .t{line-height:1}
-    .brand .t b{letter-spacing:.02em}
-    .brand .t span{display:block;font-size:12px;color:#667085;margin-top:2px}
-    .links{display:none;gap:22px;font-size:14px}
-    .cta{display:none;padding:10px 16px;border-radius:12px;background:var(--accent);color:#fff;font-weight:600;box-shadow:var(--shadow)}
-    .section{padding:64px 0}
-    .eyebrow{display:inline-block;font-size:12px;color:#667085;border:1px solid #e6e6e6;padding:6px 10px;border-radius:999px;background:#fff}
-    h1{font-size:36px;line-height:1.15;margin:14px 0;color:var(--ink)}
-    h2{font-size:28px;margin:0 0 18px;color:var(--ink)}
-    p{color:#3f3f46;line-height:1.65}
-    .grid{display:grid;gap:16px}
+  :root{
+    --ink:#0B0B0F; --graphite:#2A2A33; --paper:#FFFFFF; --soft:#F6F6F8;
+    --accent:#0A66C2; --gold:#BDA887;
+    --radius:16px; --shadow:0 6px 20px rgba(0,0,0,.06);
+    --max:1120px;
+  }
+
+  /* Base */
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; height:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:#111;
+    font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+    line-height:1.6;
+    overflow-y:auto;
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust:100%;
+  }
+  img{max-width:100%;display:block}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* Layout wrappers */
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+  @media (min-width:600px){ .wrap{padding:0 20px} }
+  @media (min-width:900px){ .wrap{padding:0 24px} }
+
+  /* Header */
+  .header{
+    position:sticky;top:0;z-index:10;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:saturate(180%) blur(10px);
+    border-bottom:1px solid #eee;
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+  @media (min-width:900px){ .nav{height:68px} }
+  .brand{display:flex;gap:12px;align-items:center;color:inherit;text-decoration:none}
+  .brand img{height:36px;width:36px;object-fit:contain;border-radius:10px}
+  @media (min-width:600px){ .brand img{height:40px;width:40px} }
+  .brand .t{line-height:1}
+  .brand .t b{letter-spacing:.02em}
+  .brand .t span{display:block;font-size:12px;color:#667085;margin-top:2px}
+
+  .links{display:none;gap:18px;font-size:14px}
+  @media (min-width:900px){ .links{display:flex} }
+
+  /* Language switch (top-right) */
+  .lang{display:flex;gap:10px;align-items:center;font-size:14px}
+  .lang a{font-weight:600;color:var(--accent)}
+  .lang .current{color:#111;cursor:default;text-decoration:none}
+  .lang .sep{color:#c7cad1}
+
+  /* Sections */
+  .section{padding:40px 0; scroll-margin-top:80px;}
+  @media (min-width:900px){ .section{padding:64px 0} }
+  .eyebrow{
+    display:inline-block;font-size:12px;color:#667085;
+    border:1px solid #e6e6e6;padding:6px 10px;border-radius:999px;background:#fff
+  }
+  h1{font-size:28px;line-height:1.2;margin:14px 0;color:var(--ink)}
+  h2{font-size:24px;margin:0 0 16px;color:var(--ink)}
+  @media (min-width:600px){ h1{font-size:32px} h2{font-size:26px} }
+  @media (min-width:900px){ h1{font-size:36px} h2{font-size:28px} }
+  p{color:#3f3f46}
+
+  /* Grid: mobile-first (no more squish) */
+  .grid{display:grid;gap:14px}
+  .two,.three,.four{grid-template-columns:1fr;}        /* phones: 1 col */
+  @media (min-width:600px){
+    .two{grid-template-columns:repeat(2,minmax(0,1fr))} /* tablets: 2 col */
+  }
+  @media (min-width:900px){
     .three{grid-template-columns:repeat(3,minmax(0,1fr))}
     .four{grid-template-columns:repeat(4,minmax(0,1fr))}
-    .two{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-    .btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:600}
-    .btn.primary{background:var(--accent);color:#fff}
-    .btn.ghost{border:1px solid #e5e7eb;color:#111;background:#fff}
-    .muted{color:#6b7280;font-size:12px}
-    .soft{background:var(--soft);border-top:1px solid #eee;border-bottom:1px solid #eee}
-    .step{height:32px;width:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;font-weight:700}
+  }
 
-    .footer{border-top:1px solid #eee;padding:24px 0;color:#6b7280;font-size:14px}
+  /* Cards & buttons */
+  .card{
+    background:#fff;border:1px solid #eee;border-radius:var(--radius);
+    padding:16px;box-shadow:var(--shadow)
+  }
+  @media (min-width:600px){ .card{padding:18px} }
+  @media (min-width:900px){ .card{padding:22px} }
+
+  .btn{
+    display:inline-block;padding:12px 16px;border-radius:12px;font-weight:600;
+    min-height:44px; /* comfortable tap target */
+  }
+  .btn.primary{background:var(--accent);color:#fff}
+  .btn.ghost{border:1px solid #e5e7eb;color:#111;background:#fff}
+
+  /* On small screens, make CTAs easy to tap */
+  @media (max-width:599px){
+    .row{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+    .btn{width:100%;text-align:center}
+  }
+  @media (min-width:600px){
     .row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  }
 
-    /* responsive */
-    @media (min-width: 900px){
-      .links{display:flex}
-      .cta{display:inline-block}
-      .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
-    }
-  </style>
+  /* Utility strips */
+  .muted{color:#6b7280;font-size:12px}
+  .soft{background:var(--soft);border-top:1px solid #eee;border-bottom:1px solid #eee}
+  .step{
+    height:32px;width:32px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--accent);color:#fff;font-weight:700;margin-bottom:8px
+  }
+
+  /* Footer */
+  .footer{border-top:1px solid #eee;padding:20px 0;color:#6b7280;font-size:14px}
+</style>
 </head>
 <body>
 
